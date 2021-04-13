@@ -29,10 +29,8 @@ m, sigma = compute_m_and_sigma(resample_frequency = "1M")
 
 # First runs the analysis for a fixed maturity. All plots go 
 # into the "../note/png" folder.
-# run_for_fixed_maturity(W0, r, m, sigma, K, S)
+run_for_fixed_maturity(W0, r, m, sigma, K, S)
 
 # Second runs the analysis considering a variable maturity. All plots go 
 # into the "../note/png" folder.
-# run_for_variable_maturity(W0, r, m, sigma, K, S)
-
-1/(1 + r)*(1.64 - (m - r)/sigma)
+run_for_variable_maturity(W0, r, m, sigma, K, S)
