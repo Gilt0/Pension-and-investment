@@ -1,0 +1,37 @@
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale = .5]
+\draw[->, ultra thick] (-2, 0) -- (13, 0);
+
+\node at (0, 0) {\large $\bullet$};
+\node at (0, 0) [below left] {$k$};
+\node at (0, 1) [above right] {\color{awesomePurple}\textbf {wealth} $\boldsymbol {\W_{k}}$};
+\draw [->, ultra thick, awesomePurple] (.5, 1) -- (0.1, .2);
+
+\node at (10, 0) {\large$\bullet$};
+\node at (10, 0) [below right] {$k + 1$};
+\node at (10, 1) [above right] {\color{awesomePurple}\textbf {wealth} $\boldsymbol {\W_{k+1}}$};
+\draw [->, ultra thick, awesomePurple] (10.5, 1) -- (10.1, .2);
+
+\draw[->] (0.1, 0) -- (0.1, - 2);
+\node at (0.1, -2) [left] {$\psi_k$ in risky asset};
+
+\draw[->] (.2, 0) -- (.2, - 4);
+\node at (.2, -4) [left] {$\psi^0_k$ in riskless asset};
+
+\draw[->] (.3, 0) -- (.3, - 1);
+\node at (.3, -1) [right] {coupon  $c$};
+
+
+\draw[->] (9.7, 0) -- (9.7, 1.5);
+\node at (9.7, 1.5) [above left] {$(1 + \mu_k)\psi_k$ from};
+\node at (9.7, 1.5) [below left] {risky asset};
+
+\draw[->] (9.8, 0) -- (9.8, 4.5);
+\node at (9.8, 4.5) [above right] {$(1 + r)\psi^0_k$ from};
+\node at (9.8, 4.5) [below right] {riskless asset};
+
+\end{tikzpicture}
+\caption{Cash flow diagram of a two period investment between instants $k$ et $k + 1$.}
+\label{fig:two-period-cash-flow-diagram}
+\end{figure}
