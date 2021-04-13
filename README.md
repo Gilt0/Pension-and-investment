@@ -13,4 +13,6 @@ In this work, a methodology is derived to compute a coupon value based on expect
 
 As their potential wealth increases with the risk they take (first image), their negative outcomes do too (last image)!
 
+[Full note](https://github.com/Gilt0/Pension-and-investment/blob/master/note/note.pdf)
+
 _The above references an opinion and is for information purposes only. It is not intended to be investment advice. Seek a duly licensed professional for investment advice._
