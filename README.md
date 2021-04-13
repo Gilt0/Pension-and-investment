@@ -9,7 +9,7 @@ regularly, they can increase the value of that coupon by investing on the ETF ma
 
 In this work, a methodology is derived to compute a coupon value based on expected revenues from investments in ETF. The methodology is simple and takes into account the risk aversion of the investor.
 
-<img src="https://github.com/Gilt0/Pension-and-investment/blob/master/note/png/additional_wealth__non_fixed_W0%3D1_r%3D0.005_m%3D0.02592451988463669_sigma%3D0.06164058158266796_K%3D24_S%3D100000.png" width="324" height="216">  <img src="https://github.com/Gilt0/Pension-and-investment/blob/master/note/png/expected_shortfall__non_fixed_W0%3D1_r%3D0.005_m%3D0.02592451988463669_sigma%3D0.06164058158266796_K%3D24_S%3D100000.png" width="324" height="216">
+<img src="https://github.com/Gilt0/Pension-and-investment/blob/master/note/png/additional_wealth_non_fixed_W0%3D1_r%3D0.0004166666666666667_m%3D0.02592451988463669_sigma%3D0.06164058158266796_K%3D24_S%3D100000.png" width="324" height="216">  <img src="https://github.com/Gilt0/Pension-and-investment/blob/master/note/png/expected_shortfall_non_fixed_W0%3D1_r%3D0.0004166666666666667_m%3D0.02592451988463669_sigma%3D0.06164058158266796_K%3D24_S%3D100000.png" width="324" height="216">
 
 As their potential wealth increases with the risk they take (left image), their negative outcomes do too (right image)! 
 
