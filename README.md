@@ -12,4 +12,6 @@ In this work, a methodology is derived to compute a coupon value based on expect
 ![alt text](https://github.com/Gilt0/Pension-and-investment/blob/master/note/png/additional_wealth__non_fixed_W0%3D1_r%3D0.005_m%3D0.02592451988463669_sigma%3D0.06164058158266796_K%3D24_S%3D100000.png)
 ![alt text](https://github.com/Gilt0/Pension-and-investment/blob/master/note/png/expected_shortfall__non_fixed_W0%3D1_r%3D0.005_m%3D0.02592451988463669_sigma%3D0.06164058158266796_K%3D24_S%3D100000.png)
 
+As their potential wealth increases with the risk they take (left image), their negative outcomes do too (right image)!
+
 _The above references an opinion and is for information purposes only. It is not intended to be investment advice. Seek a duly licensed professional for investment advice._
