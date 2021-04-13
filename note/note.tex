@@ -220,7 +220,7 @@ The dimensionless risk aversion parameter takes its values between $0$ and $1/\r
 
 To run simulations, 
 \begin{itemize}
-\item the risk free rate is set at $r = 0.005$ which is the \href{https://www.capital.fr/votre-argent/livret-a-ldds-lep-cel-pee-les-nouveaux-taux-de-votre-epargne-reglementee-au-1er-fevrier-2020-1361121#:~:text=Livret%20A%20%3A%20taux%20%C3%A0%200%2C5%25&text=Pour%20une%20personne%20l'ayant,de%20115%20euros%20par%20an.}{\color{awesomePurple}livret A rate},
+\item the risk free rate is set at $r = 0.005/12$ which is the \href{https://www.capital.fr/votre-argent/livret-a-ldds-lep-cel-pee-les-nouveaux-taux-de-votre-epargne-reglementee-au-1er-fevrier-2020-1361121#:~:text=Livret%20A%20%3A%20taux%20%C3%A0%200%2C5%25&text=Pour%20une%20personne%20l'ayant,de%20115%20euros%20par%20an.}{\color{awesomePurple}livret A rate},
 \item we consider that the maturity $K = 24$ which is equivalent to two years,
 \item the number of samples in the Monte-Carlo simulations is $S = 100000$, and finally
 \item the risky asset is the \href{https://www.abcbourse.com/download/valeur/CACp}{\color{awesomePurple}Lyxor ETF CAC 40} for which monthly data gives $m = 0.02592$ and $\sigma = 0.06164$ from $1^\textnormal{st}$ April 2020 to $31^\textnormal{st}$ March 2021.
@@ -237,21 +237,21 @@ $ which caps the value of $\xi$ to $0.77276$. Figures \ref{fig:fixed-maturity} a
      \hfill
      \begin{subfigure}[b]{\textwidth}
          \centering
-         \includegraphics[scale=.7]{png/average_life_span_W0=1_r=0.005_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
+         \includegraphics[scale=.7]{png/average_life_span_W0=1_r=0.0004166666666666667_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
          \caption{}
          \label{fig:average-final-wealth-zero-life-span}
      \end{subfigure}
      \\
      \begin{subfigure}[b]{\textwidth}
          \centering
-         \includegraphics[scale=.7]{png/additional_wealth_W0=1_r=0.005_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
+         \includegraphics[scale=.7]{png/additional_wealth_W0=1_r=0.0004166666666666667_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
          \caption{}
          \label{fig:average-final-wealth-zero-additional wealth}
      \end{subfigure}
      \\
      \begin{subfigure}[b]{\textwidth}
          \centering
-         \includegraphics[scale=.7]{png/expected_shortfall_W0=1_r=0.005_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
+         \includegraphics[scale=.7]{png/expected_shortfall_W0=1_r=0.0004166666666666667_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
          \caption{}
          \label{fig:average-final-wealth-zero-expected-shortfall}
      \end{subfigure}
@@ -264,21 +264,21 @@ $ which caps the value of $\xi$ to $0.77276$. Figures \ref{fig:fixed-maturity} a
      \hfill
      \begin{subfigure}[b]{\textwidth}
          \centering
-         \includegraphics[scale=.7]{png/average_life_span__non_fixed_W0=1_r=0.005_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
+         \includegraphics[scale=.7]{png/average_life_span_non_fixed_W0=1_r=0.0004166666666666667_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
          \caption{}
          \label{fig:average-final-wealth-zero-life-span}
      \end{subfigure}
      \\
      \begin{subfigure}[b]{\textwidth}
          \centering
-         \includegraphics[scale=.7]{png/additional_wealth__non_fixed_W0=1_r=0.005_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
+         \includegraphics[scale=.7]{png/additional_wealth_non_fixed_W0=1_r=0.0004166666666666667_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
          \caption{}
          \label{fig:average-final-wealth-zero-additional wealth}
      \end{subfigure}
      \\
      \begin{subfigure}[b]{\textwidth}
          \centering
-         \includegraphics[scale=.7]{png/expected_shortfall__non_fixed_W0=1_r=0.005_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
+         \includegraphics[scale=.7]{png/expected_shortfall_non_fixed_W0=1_r=0.0004166666666666667_m=0.02592451988463669_sigma=0.06164058158266796_K=24_S=100000.png}
          \caption{}
          \label{fig:average-final-wealth-zero-expected-shortfall}
      \end{subfigure}
@@ -298,13 +298,16 @@ When matching the expected maturity, two differences:
 
 This short document demonstrate that with a precise strategy and wealth manegement, an investor can determine how they can gain from investing in ETFs. This study assumes rather simple market dynamics hypothesis, however, the general framework provides an acurate methodology to determine optimal pension management.
 
-The model would gain in accuracy if
+The model would gain in efficiency if
 \begin{itemize}
+\item the target average wealth at maturity could be controlled, openning the door to inheritance and transmissions,
 \item the returns where modelled with a stochastic volatility model,
+\item the random nature of life expectancy was added,
 \item multiple risky assets where considered in the portfolio,
 \item the wealth dynamic was not computed with discounted values as they bring about underflows,
-\item the root finding algorithm used where optimized.
+\item the root finding algorithm used were optimized.
 \end{itemize}
+
 
 Finally, it could be interesting to run a backtesting scenario on multiple ETFs and see for different periods what the risks are.
 

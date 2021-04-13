@@ -46,7 +46,7 @@ def run_for_variable_maturity(W0, r, m, sigma, K, S):
             return K_mean - K
     
         print(f"Calculating coupon for xi = {xi}")
-        c_value = optimize.root_scalar(objective, bracket = [W0/K, 1], method = 'brentq').root
+        c_value = optimize.root_scalar(objective, bracket = [W0/K*.9, 1], method = 'brentq').root
     
         K_values, W_K_values = compute_maturity(c_value, xi,  W0, r, m, sigma, K, S)
     
@@ -63,7 +63,7 @@ def run_for_variable_maturity(W0, r, m, sigma, K, S):
         ES_5_values[n] = - dW[dW <= VaR_5].mean()
         STDS_5_values[n] = dW[dW <= VaR_5].std()    
     
-    parameter_key = f"_non_fixed_W0={W0}_r={r}_m={m}_sigma={sigma}_K={K}_S={S}"
+    parameter_key = f"non_fixed_W0={W0}_r={r}_m={m}_sigma={sigma}_K={K}_S={S}"
     
     # Plotting coupon curve with linear benchmark
     # Because of numerical inaccuracies, benchmark is set to first value found by 
