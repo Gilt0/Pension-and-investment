@@ -62,7 +62,7 @@ def plot_wealth_examples(W0, m, sigma, K):
     plt.plot(compute_illustrative_daily_wealth(W0, m, sigma, K, c = 0.03), color = AWESOME_PURPLE, linewidth = .5)
     plt.plot(compute_illustrative_daily_wealth(W0, m, sigma, K, c = 0.048), color = AWESOME_PURPLE, linewidth = .5)
     plt.plot(compute_illustrative_daily_wealth(W0, m, sigma, K, c = 0.06), color = AWESOME_PURPLE, linewidth = .5)
-    plt.xticks([0, 30*K + 1], ["0", r"$K$"])
+    plt.xticks([0, 30*K + 1], ["0", r"Death"])
     plt.yticks([0, 1], [r"$0$", r"$W_0$"])
     plt.xlabel("Time")
     plt.ylabel("Wealth")
